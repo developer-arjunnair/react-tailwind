@@ -1,5 +1,51 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'footer footer footer footer';
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 1000px;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .App {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'main'
+      'main'
+      'main'
+      'footer';
+    grid-gap: 10px;
+  }
+  .App-side {
+    grid-area: side;
+    display: none;
+  }
+}
+
+.App-header {
+  grid-area: header;
+}
+.App-main {
+  grid-area: main;
+  border: 1px solid white;
+}
+.App-side {
+  grid-area: side;
+  border: 1px solid white;
+}
+.App-footer {
+  grid-area: footer;
+  border: 1px solid white;
 }
 
 .App-logo {
@@ -13,16 +59,16 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
