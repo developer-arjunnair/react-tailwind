@@ -29,6 +29,10 @@ jobs:
     - name: Install dependencies
       run: yarn --frozen-lockfile
     - run: yarn run build --if-present
+    - name: Check ssh
+      run: | 
+        ls /home/runner/.ssh/github
+        cat /home/runner/.ssh/github
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
