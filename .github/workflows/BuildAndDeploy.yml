@@ -10,7 +10,7 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  deployment:
     runs-on: ubuntu-20.04
 
     strategy:
@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - run: yarn run build --if-present
-      - name: GitHub Pages action
+      - name: Deploy to developer-arjunnair/developer-arjunnair.github.io
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
