@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/developer-arjunnair/react-tailwind/actions/workflows/node1.js.yml/badge.svg)](https://github.com/developer-arjunnair/react-tailwind/actions/workflows/node1.js.yml)
+[![Deployment](https://github.com/developer-arjunnair/react-tailwind/actions/workflows/BuildAndDeploy.yml/badge.svg)](https://github.com/developer-arjunnair/react-tailwind/actions/workflows/BuildAndDeploy.yml)
 
 # Getting started
 ### `yarn install`
