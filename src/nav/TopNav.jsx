@@ -1,6 +1,6 @@
 import NavPill from './NavPill';
 const TopNav = ({ currentNav, handleNavClick }) => {
- 
+
   return (
     <div className='App-side flex flex-row items-center justify-around'>
       <NavPill
@@ -8,6 +8,7 @@ const TopNav = ({ currentNav, handleNavClick }) => {
         onClick={() => {
           handleNavClick(1);
         }}
+        loadTime={0}
       >
         Wayfair
       </NavPill>
@@ -16,6 +17,7 @@ const TopNav = ({ currentNav, handleNavClick }) => {
         onClick={() => {
           handleNavClick(2);
         }}
+        loadTime={1000}
       >
         Expedia
       </NavPill>
@@ -24,6 +26,7 @@ const TopNav = ({ currentNav, handleNavClick }) => {
         onClick={() => {
           handleNavClick(3);
         }}
+        loadTime={1000}
       >
         Wipro
       </NavPill>
