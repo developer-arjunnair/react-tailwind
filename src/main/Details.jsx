@@ -42,7 +42,13 @@ const Details = ({ currentCompany }) => {
         'junit',
         'mysql',
       ],
-      duties: ['WIP'],
+      duties: [
+        "👷🏽‍♂️ Building BFF for an bidding app",
+        " 🛠 Optimizing and improving the system",
+        " ⨮ Adding new features to the system",
+        "Reviweing PRs ensuring code quality and test coverage",
+        "👨‍💻 Monitoring and improving the sytem's performance",
+      ],
     },
     {
       skills: [
@@ -54,8 +60,16 @@ const Details = ({ currentCompany }) => {
         'sap-mdm',
         'webdynpro-java',
         'sap-pi',
+        "team management"
       ],
-      duties: ['WIP'],
+      duties: [
+        " 🛠 Customizing the SAP products to tailor customers needs",
+        "Leading a team of 5 developers, 2 onshore and 3 offshore",
+        "Working with the customer to understand their needs",
+        " 📝 Documenting the requirements to educate team and communicate effectively with stakeholders",
+        "Doing technical interviews",
+        "Coordinating with QA to ensure the product is stable",
+      ],
     },
   ];
   const currentExperience = experience[currentCompany - 1];
