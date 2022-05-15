@@ -1,4 +1,3 @@
-import { Suspense, useEffect, useState } from "react";
 import RolesAndResponsibilities from "./RolesAndResponsibilites";
 import SkillText from "./SkillText";
 

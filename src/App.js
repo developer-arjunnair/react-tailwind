@@ -1,4 +1,4 @@
-import { useState, Suspense, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import FooterBanner from "./footer/FooterBanner";
 import HeaderBanner from "./header/HeaderBanner";
